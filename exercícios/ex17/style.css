@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    /* 
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc (pt: ponto, pc: paica, não recomendado a utilizar em site/tela e sim papel).
+
+    Medidas Relativas
+    em(m maiúsculo da letra/fonte), ex, rem(fonte configurada no body), vw(porcentagem da largura da viewport), vh(altura da wiewport), %(porcentagem).
+    16px geralmente = 1em
+    
+    W3C recomenda para uso de site as medidas de fonte: px e em
+    */
+    font-size: 1em;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(10, 34, 44);
+    font-size: 2em;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

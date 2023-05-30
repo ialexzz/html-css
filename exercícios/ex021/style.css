@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+h1 { /* BOX-LEVEL */
+    background-color: lightblue;
+
+    height: 300px;
+    width: 300px;
+
+    /*  "border:" normal 
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkcyan;
+    */
+
+    /*  SHORTHAND "border:" */
+    border: 10px solid darkcyan;
+
+    /* "padding" normal
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+    SHORTHAND "padding:" para 4 valores
+    padding: 10px 10p 10 px 10px;
+
+    SHORTHAND "padding:" para 2 valores
+    padding: 10px 20px;
+    '- O 10px primeiro vai configurar o top e bottom
+    '- O 20px segundamente configura o right e left
+    */
+
+    /* O MAIS SIMPLIFICADO "padding:" 1 valor */
+    padding: 10px;
+
+    /* "margin:" normal 
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    */
+
+    /* SHORTHAND "margin:" Laterais auto (right and left: auto)
+    magin: 20px auto 40px auto;
+    */
+
+    /* SHORTHAND "margin:" 4 Valores */
+    margin: 20px 20px 40px 20px;
+
+    /* "outline:" normal 
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: slateblue;
+    */
+
+    /* SHORTHAND "outline:" */
+    outline: 5px dashed slateblue;
+}
+
+a { /* INLINE-LEVEL */
+    border: 10px solid rgb(0, 0, 255, 0.655);
+    padding: 10px;
+}
