@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            /*
             height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment:  fixed;
+            */
+
+            /* SHORTHAND - background
+                Na vdd de acordo com o W3Schools a ordem correta é essa: 
+                color > image > repeat > attachment > position >/size
+
+                Seguinte a barra "/" é utilizada aqui para separar "center" que é a posição da imagem de fundo e "cover" que é a dimensão da imagem. Se não colocar a barra, o interpretador de css pode interpretar como uma propriedade incorreta e sua imagem pode não ser exibida corretamente.
+
+                Respota ChatGPT para uso da (/)
+                A barra (/) é usada para separar as propriedades de posicionamento (position) e tamanho (size) da imagem de fundo na ordem shorthand da propriedade background no CSS. Isso ajuda a evitar confusão entre as propriedades de tamanho e posicionamento da imagem de fundo.
+            */
+
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed center center/cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
