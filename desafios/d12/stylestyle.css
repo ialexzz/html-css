@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
+* p {
+    margin: 0px;
+}
+
 body {
     margin: 0px;
     background-color: black;
@@ -50,18 +54,35 @@ main {
 main > article > div#container1 {
     background: black url(imagens/background001.jpg) no-repeat fixed right bottom/cover;
     box-shadow: inset 7px 2px 7px rgba(0, 0, 0, 0.331);
-}
-
-main > article > div > p.conteudo {
-    background-color: rgba(0, 0, 0, 0.368);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 30px;
-    left: 30px;
+    height: 60vh;
+    position: relative;
 }
 
 main > article > div#container2 {
     background: black url(imagens/background002.jpg) no-repeat fixed left center/cover;
+    box-shadow: inset 7px 2px 7px rgba(0, 0, 0, 0.331);
+    height: 60vh;
+    position: relative;
+}
+
+main > article > div > p#conteudo1 {
+    background-color: rgba(0, 0, 0, 0.532);
+    color: white;
+    font-family: 'Sriracha', cursive, sans-serif;
+    left: 30px;
+    padding: 4px;
+    position: absolute;
+    top: 20%;
+}
+
+main > article > div > p#conteudo2 {
+    background-color: rgba(0, 0, 0, 0.532);
+    color: white;
+    font-family: 'Sriracha', cursive, sans-serif;
+    left: 30px;
+    padding: 4px;
+    position: absolute;
+    top: 20%;
 }
 
 article > p {
@@ -77,3 +98,17 @@ footer {
     color: white;
 }
 
+footer > p {
+    margin: 0px;
+    padding: 7px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
