@@ -12,6 +12,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -29,7 +30,18 @@
 
         thead, tfoot {
             background-color: gray;
-            color: white;
+            color: #ffffff;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:hover {
+            border: 1.5px solid rgb(23, 9, 226);
+            font-weight: bolder;
         }
 
         tbody > tr:nth-child(odd) { /* 2n-1 */
@@ -181,5 +193,6 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto perferendis voluptatum eveniet id minima tenetur consequuntur facere, fuga, aliquam sint eum odit non accusamus iste, et inventore nostrum suscipit? Nobis labore magnam iure? Vitae libero illo consequatur numquam eligendi debitis culpa asperiores, eius nisi perferendis non nesciunt qui modi vel voluptates dolore amet ipsa fugit? Deserunt quibusdam labore quos quae et velit in hic earum rem maxime officia iure obcaecati ducimus cupiditate possimus tenetur enim sit distinctio, voluptatem, omnis, architecto error dolore perferendis? Obcaecati laboriosam, quidem accusamus molestias sed, dicta tempore minus blanditiis est quia consectetur unde possimus doloremque?</p>
 </body>
 </html>
