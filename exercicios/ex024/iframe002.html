@@ -9,17 +9,35 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        div.container {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* OUTRA FORMA DE CENTRALIZAR O iframe também
         iframe {
             width: 300px;
             display: block;
             margin: auto;
+        }
+        */
+
+        p.erro {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: red;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Teste de iframe</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga provident animi magni ab, repellendus quasi non reprehenderit cum debitis ipsa cumque aperiam iste ipsum aut vitae, quo delectus ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quibusdam exercitationem expedita enim nesciunt aspernatur repudiandae magni iste molestiae eaque excepturi voluptates dicta, illo sapiente qui voluptatum velit cupiditate labore!</p>   
-    <iframe src="pag001.html" frameborder="0" height="400px" width="400px"></iframe> 
+    <div class="container"><iframe src="paginas-extras/pag001.html" frameborder="0" height="400px" width="400px">
+        <p class="erro">Infelizmente Seu navegador não é compatível isto!</p>
+    </iframe> </div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga provident animi magni ab, repellendus quasi non reprehenderit cum debitis ipsa cumque aperiam iste ipsum aut vitae, quo delectus ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quibusdam exercitationem expedita enim nesciunt aspernatur repudiandae magni iste molestiae eaque excepturi voluptates dicta, illo sapiente qui voluptatum velit cupiditate labore!</p>
 </body>
 </html>
