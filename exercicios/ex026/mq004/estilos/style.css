@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Mobile Frist */
+/*  Mobile Frist  */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +22,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.79);
+    width: 400px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -38,11 +39,6 @@ h1 {
 img {
     display: block;
     margin: auto;
-}
-
-img#phone { 
-    display: block;
-    margin: auto; 
 }
 
 img#phone { display: block; }
